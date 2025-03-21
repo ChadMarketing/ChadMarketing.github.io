@@ -55,14 +55,6 @@
   transform: scale(1.2) rotate(360deg);
 }
 
-@media only screen and (max-width: 400px) {
-  .image_1 {
-    width: 300px;
-    height: 300px;
-    left: 12%;
-  }
-}
-
 /* курсор */
 .custom-cursor {
   position: absolute;
@@ -78,64 +70,6 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
-
-/* края */
-/* .image_banner_giga {
-  position: absolute;
-  width: 526.5px;
-  margin-top: 6.7%;
-  margin-left: -59.25%;
-  transform: rotate(-90deg);
-}
-.image_banner_giga1 {
-  position: absolute;
-  width: 526.5px;
-  margin-top: 34.4%;
-  margin-left: -59.25%;
-  transform: rotate(-90deg);
-}
-.image_banner_giga2 {
-  position: absolute;
-  width: 528px;
-  margin-top: 6.7%;
-  margin-left: 31.4%;
-  transform: rotate(90deg);
-}
-.image_banner_giga3 {
-  position: absolute;
-  width: 528px;
-  margin-top: 34.4%;
-  margin-left: 31.4%;
-  transform: rotate(90deg);
-}
-.image_banner_giga4 {
-  position: absolute;
-  width: 528px;
-  margin-top: 62.1%;
-  margin-left: 31.4%;
-  transform: rotate(90deg);
-}
-.image_banner_giga5 {
-  position: absolute;
-  width: 526.5px;
-  margin-top: 62.1%;
-  margin-left: -59.25%;
-  transform: rotate(90deg);
-}
-.image_banner_giga6 {
-  position: absolute;
-  width: 528px;
-  margin-top: 89.7%;
-  margin-left: 31.4%;
-  transform: rotate(90deg);
-}
-.image_banner_giga7 {
-  position: absolute;
-  width: 526.5px;
-  margin-top: 89.7%;
-  margin-left: -59.25%;
-  transform: rotate(90deg);
-} */
 
 /* кнопки */
 .gif-button_1 {
