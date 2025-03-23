@@ -144,7 +144,7 @@ setInterval(() => {
   createDrop(1630, 1260);
   createDrop(1680, 1260);
   createDrop(1720, 1260);
-}, 1500); // Интервал для создания новых капель
+}, 1500);
 
 // Список фраз
 const phrases = [
@@ -156,7 +156,7 @@ const phrases = [
   { text: "Maximize Your Reach – All Marketing, One Place🔥", left: "30.5%" },
   { text: "The Only Marketing Arsenal You’ll Ever Need✨", left: "31%" },
   { text: "Crush the Competition with Full-Stack Marketing💫", left: "29%" },
-  { text: "One Hub, Infinite Marketing Possibilities⭐", left: "33%" },
+  // { text: "One Hub, Infinite Marketing Possibilities⭐", left: "33%" },
   {
     text: "Supercharge Your Brand – All Marketing, Zero Limits🚀",
     left: "28%",
@@ -174,7 +174,6 @@ const phrases = [
     left: "25%",
   },
 ];
-
 // Выбираем случайную фразу
 const randomIndex = Math.floor(Math.random() * phrases.length);
 const randomPhrase = phrases[randomIndex];
