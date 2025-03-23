@@ -416,3 +416,7 @@ body {
   margin-left: 70%;
   transform: rotate(10deg);
 }
+/* бегущая строка для телефонов */
+.run_block {
+  display: none;
+}
