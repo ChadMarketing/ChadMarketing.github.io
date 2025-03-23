@@ -1,35 +1,83 @@
+/* оч мелк телефоны */
+@media only screen and (max-width: 350px) {
+  .slime-container {
+    display: none;
+  }
+
+  .slime-container img {
+    display: none;
+  }
+  .image_1 {
+    width: 260px;
+    height: 260px;
+    left: 14%;
+  }
+
+  .music-control {
+    margin-left: 85%;
+    margin-top: -250%;
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+  }
+}
+/* маленькие телефоны */
+@media only screen and (max-width: 400px) {
+  .slime-container {
+    display: none;
+  }
+
+  .slime-container img {
+    display: none;
+  }
+  .music-control {
+    margin-left: 85%;
+    margin-top: -250%;
+    width: 14%;
+    height: 10%;
+    cursor: pointer;
+  }
+  .image_1 {
+    width: 3px;
+    height: 3px;
+    left: 1%;
+  }
+  .text_1 {
+    top: 83%;
+  }
+}
 /* телефоны */
 @media only screen and (max-width: 767px) {
-  /* .marquee-wrapper {
-    white-space: nowrap;
+  .run_block {
     position: absolute;
-    bottom: 0;
     width: 100%;
     height: 10%;
     background: none;
+    top: 110%;
+    z-index: 9999;
+    display: block;
+    overflow: hidden;
+    left: 0%;
+  }
+  .marquee-wrapper {
+    display: none;
+  }
+
+  .run_block div {
+    animation: scroll 175s linear infinite;
+    display: inline-block;
     white-space: nowrap;
-    align-items: center;
-    display: flex;
-    top: 101%;
-    z-index: 999;
-    overflow-x: hidden; 
-    margin: 0;
-    box-sizing: border-box;
-    animation: scroll 5s linear infinite;
   }
-  .marquee-content {
-    width: max-content;
-  }
-  .marquee-content img {
+  .run_text img {
     width: 70px;
-    height: 73px;
-    margin: 50px;
+    height: 70px;
     border-radius: 60%;
   }
   .M_text {
     font-weight: 700;
     color: rgb(174, 0, 255);
     animation: blink 1s infinite;
+    text-align: center;
   }
   @keyframes blink {
     0% {
@@ -52,50 +100,25 @@
     to {
       transform: translateX(-100%);
     }
-  } */
-
-  .slime-container {
-    display: none;
   }
 
-  /* .slime-container img {
-    display: none;
+  @keyframes scroll_1 {
+    from {
+      transform: translateX(-90%);
+    }
+    to {
+      transform: translateX(0%);
+    }
   }
-  .gif-button_2:active {
-    transform: scale(0.95);
-  }
-  .image_banner_giga {
-    display: none;
-  }
-  .image_banner_giga1 {
-    display: none;
-  }
-  .image_banner_giga2 {
-    display: none;
-  }
-  .image_banner_giga3 {
-    display: none;
-  }
-  .image_banner_giga4 {
-    display: none;
-  }
-  .image_banner_giga5 {
-    display: none;
-  }
-  .image_banner_giga6 {
-    display: none;
-  }
-  .image_banner_giga7 {
-    display: none;
-  } */
+
   body {
     overflow-x: hidden;
   }
   .music-control {
-    margin-left: 87%;
-    margin-top: -245%;
-    width: 15%;
-    height: 15%;
+    margin-left: 85%;
+    margin-top: -290%;
+    width: 16%;
+    height: 4.5%;
     cursor: pointer;
   }
   .image_1 {
@@ -106,41 +129,32 @@
 
   .text_1 {
     position: absolute;
-    top: 75%;
-    left: 11.5%;
-    font-size: 125%;
+    top: 85%;
+    left: -19%;
+    font-size: 170%;
     font-weight: bold;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     animation: glowice12 1.5s infinite alternate;
-    margin: 0 auto; /* Центрирует колонку на странице */
-    line-height: 1.5; /* Устанавливает интерлиньяж для удобства чтения */
-    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    width: 80%;
+    transform: translateX(-70px);
   }
-  @keyframes glowice12 {
-    0% {
-      text-shadow: 0 0 5px #a6cfff, 0 0 10px #80d4ff, 0 0 15px #3a88e8;
-    }
-    50% {
-      text-shadow: 0 0 10px #5fa7e9, 0 0 20px #7ac7ff, 0 0 30px #379de6;
-    }
-    100% {
-      text-shadow: 0 0 20px #4a8bd2, 0 0 40px #2894e6, 0 0 50px #186cb2;
-    }
-  }
+
   .gif-button_1 {
-    margin-left: 10%;
-    margin-top: 98%;
-    width: 25%;
-    height: 22%;
+    margin-left: 8%;
+    margin-top: 110%;
+    width: 30%;
+    height: 5.5%;
     border: none;
     border-radius: 15%;
-    background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
-    background-size: cover; /* Масштабируем GIF по размеру кнопки */
-    font-size: 75%;
+    background: url("giga-chad.gif") no-repeat center center;
+    background-size: cover;
+    font-size: 100%;
     font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,27 +163,18 @@
     color: rgb(0, 26, 255);
   }
 
-  .gif-button_1:hover {
-    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
-  }
-
-  .gif-button_1:active {
-    transform: scale(0.95); /* Эффект уменьшения при нажатии */
-  }
-
   .gif-button_2 {
-    margin-left: 66%;
-    margin-top: -21.9%;
-    width: 25%;
-    height: 22%;
+    margin-left: 62%;
+    margin-top: -32%;
+    width: 30%;
+    height: 5.5%;
     border: none;
     border-radius: 15%;
-    background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
-    background-size: cover; /* Масштабируем GIF по размеру кнопки */
-    font-size: 125%;
+    background: url("giga-chad.gif") no-repeat center center;
+    background-size: cover;
+    font-size: 100%;
     font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,162 +183,223 @@
     color: rgb(255, 0, 0);
   }
 
-  .gif-button_2:hover {
-    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+  .text-wrapper {
+    margin-left: 1%;
+    margin-top: 80%;
+    width: 96%;
+    line-height: 1.5;
+    font-size: 175%;
+    color: #13a5d1;
+    font-family: Permanent Marker;
   }
-
-  .gif-button_2:active {
-    transform: scale(0.95); /* Эффект уменьшения при нажатии */
+  .word-container {
+    display: block;
+    font-size: 160%;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 5s;
+    margin-top: -235%;
+    margin-left: 1%;
+    font-family: Nosifer;
+    color: #ff0033;
+    animation: fall 1s linear infinite;
+    max-width: 120%;
   }
-}
-/* планшеты */
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
-  .slime-container {
+  .drop {
     display: none;
-  }
-
-  .slime-container img {
-    display: none;
-  }
-  .marquee-content {
-    width: max-content;
-    animation: scroll 140s linear infinite;
-  }
-  .music-control {
-    margin-left: 115%;
-    margin-top: -240%;
-    width: 15%;
-    height: 15%;
-    cursor: pointer;
   }
   .black-bar1 {
     top: 59%;
     left: -50%;
     width: 150%;
-    height: 129.6%;
+    height: 250%;
     background-color: black;
     position: absolute;
     transform: translateY(430px);
     z-index: -1;
   }
-  .image_1 {
-    width: 325px;
-    height: 325px;
-    left: 29%;
+  .text_2 {
+    margin-left: 20%;
+    margin-top: 235%;
+    width: 80%;
+    line-height: 1.5;
+    font-size: 245%;
+    color: #c300ff;
+    font-family: Permanent Marker;
+    opacity: 0;
   }
-  .text_1 {
-    position: absolute;
-    top: 75%;
-    left: 11.5%;
-    font-size: 125%;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    animation: glowice12 1.5s infinite alternate;
-    margin: 0 auto; /* Центрирует колонку на странице */
-    line-height: 1.5; /* Устанавливает интерлиньяж для удобства чтения */
-    max-width: 80%;
-  }
-  @keyframes glowice12 {
+  @keyframes slideDown-1 {
     0% {
-      text-shadow: 0 0 5px #a6cfff, 0 0 10px #80d4ff, 0 0 15px #3a88e8;
-    }
-    50% {
-      text-shadow: 0 0 10px #5fa7e9, 0 0 20px #7ac7ff, 0 0 30px #379de6;
+      opacity: 0;
+      transform: translateX(-50%);
     }
     100% {
-      text-shadow: 0 0 20px #4a8bd2, 0 0 40px #2894e6, 0 0 50px #186cb2;
+      opacity: 1;
+      transform: translateX(0);
+      transform: rotate(15deg);
     }
   }
-  .gif-button_1 {
-    margin-left: 10%;
-    margin-top: 98%;
-    width: 25%;
-    height: 22%;
-    border: none;
-    border-radius: 15%;
-    background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
-    background-size: cover; /* Масштабируем GIF по размеру кнопки */
-    font-size: 75%;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    font-family: Nosifer;
-    color: rgb(0, 26, 255);
+  .slide-in-1 {
+    animation: slideDown-1 2s forwards;
+  }
+  .text_3 {
+    width: 96%;
+    font-size: 290%;
+    margin-left: -9%;
+    margin-top: 30%;
+    color: #13a5d1;
+    font-family: Permanent Marker;
+    transform: rotate(-25deg);
+  }
+  .arrow {
+    width: 27.5%;
+    margin-top: -15%;
+    margin-left: 74%;
+    transform: rotate(200deg);
   }
 
-  .gif-button_1:hover {
-    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+  .slime-container {
+    position: relative;
+    display: inline-block;
+    top: 84%;
+    width: 140%;
+    left: -18%;
+    z-index: 25;
   }
 
-  .gif-button_1:active {
-    transform: scale(0.95); /* Эффект уменьшения при нажатии */
+  .slime-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 80%;
+    transition: filter 0.4s ease-out;
+    filter: url(#displacementFilter);
+    width: 63%;
+    box-shadow: 0 0 110px rgb(0, 26, 255);
+  }
+  .custom-cursor {
+    display: none;
   }
 
-  .gif-button_2 {
-    margin-left: 66%;
-    margin-top: -21.9%;
-    width: 25%;
-    height: 22%;
-    border: none;
-    border-radius: 15%;
-    background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
-    background-size: cover; /* Масштабируем GIF по размеру кнопки */
-    font-size: 125%;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    font-family: Nosifer;
-    color: rgb(255, 0, 0);
+  /* планшеты */
+  @media only screen and (min-width: 768px) and (max-width: 1381px) {
+    .slime-container {
+      display: none;
+    }
+
+    .slime-container img {
+      display: none;
+    }
+    .marquee-content {
+      width: max-content;
+      animation: scroll 140s linear infinite;
+    }
+    .music-control {
+      margin-left: 115%;
+      margin-top: -240%;
+      width: 15%;
+      height: 15%;
+      cursor: pointer;
+    }
+    .black-bar1 {
+      top: 59%;
+      left: -50%;
+      width: 150%;
+      height: 129.6%;
+      background-color: black;
+      position: absolute;
+      transform: translateY(430px);
+      z-index: -1;
+    }
+    .image_1 {
+      width: 325px;
+      height: 325px;
+      left: 29%;
+    }
+    .text_1 {
+      position: absolute;
+      top: 75%;
+      left: 11.5%;
+      font-size: 125%;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      animation: glowice12 1.5s infinite alternate;
+      margin: 0 auto; /* Центрирует колонку на странице */
+      line-height: 1.5; /* Устанавливает интерлиньяж для удобства чтения */
+      max-width: 80%;
+    }
+    @keyframes glowice12 {
+      0% {
+        text-shadow: 0 0 5px #a6cfff, 0 0 10px #80d4ff, 0 0 15px #3a88e8;
+      }
+      50% {
+        text-shadow: 0 0 10px #5fa7e9, 0 0 20px #7ac7ff, 0 0 30px #379de6;
+      }
+      100% {
+        text-shadow: 0 0 20px #4a8bd2, 0 0 40px #2894e6, 0 0 50px #186cb2;
+      }
+    }
+    .gif-button_1 {
+      margin-left: 10%;
+      margin-top: 98%;
+      width: 25%;
+      height: 22%;
+      border: none;
+      border-radius: 15%;
+      background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
+      background-size: cover; /* Масштабируем GIF по размеру кнопки */
+      font-size: 75%;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-family: Nosifer;
+      color: rgb(0, 26, 255);
+    }
+
+    .gif-button_1:hover {
+      transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    }
+
+    .gif-button_1:active {
+      transform: scale(0.95); /* Эффект уменьшения при нажатии */
+    }
+
+    .gif-button_2 {
+      margin-left: 66%;
+      margin-top: -21.9%;
+      width: 25%;
+      height: 22%;
+      border: none;
+      border-radius: 15%;
+      background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
+      background-size: cover; /* Масштабируем GIF по размеру кнопки */
+      font-size: 125%;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-family: Nosifer;
+      color: rgb(255, 0, 0);
+    }
+
+    .gif-button_2:hover {
+      transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    }
+
+    .gif-button_2:active {
+      transform: scale(0.95); /* Эффект уменьшения при нажатии */
+    }
   }
 
-  .gif-button_2:hover {
-    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
-  }
-
-  .gif-button_2:active {
-    transform: scale(0.95); /* Эффект уменьшения при нажатии */
-  }
-  /* .image_banner_giga {
-    display: none;
-  }
-  .image_banner_giga1 {
-    display: none;
-  }
-  .image_banner_giga2 {
-    display: none;
-  }
-  .image_banner_giga3 {
-    display: none;
-  }
-  .image_banner_giga4 {
-    display: none;
-  }
-  .image_banner_giga5 {
-    display: none;
-  }
-  .image_banner_giga6 {
-    display: none;
-  }
-  .image_banner_giga7 {
-    display: none;
-  }
-  body {
-    overflow-x: hidden;
-  }
-} */
-
-  @media only screen and (min-width: 800px) and (max-width: 1440px) {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slime-container {
       display: none;
     }
@@ -352,7 +418,7 @@
       z-index: -1;
     }
   }
-  @media only screen and (min-width: 900px) and (max-width: 1440px) {
+  @media only screen and (min-width: 992px) and (max-width: 1381px) {
     .slime-container {
       display: none;
     }
@@ -368,54 +434,6 @@
     .music-control {
       margin-left: 120%;
       margin-top: -230%;
-      width: 15%;
-      height: 15%;
-      cursor: pointer;
-    }
-  }
-
-  /* маленькие телефоны */
-  @media only screen and (max-width: 400px) {
-    .slime-container {
-      display: none;
-    }
-
-    .slime-container img {
-      display: none;
-    }
-    .music-control {
-      margin-left: 85%;
-      margin-top: -250%;
-      width: 15%;
-      height: 15%;
-      cursor: pointer;
-    }
-    .image_1 {
-      width: 300px;
-      height: 300px;
-      left: 11%;
-    }
-    .text_1 {
-      top: 83%;
-    }
-  }
-  @media only screen and (max-width: 350px) {
-    .slime-container {
-      display: none;
-    }
-
-    .slime-container img {
-      display: none;
-    }
-    .image_1 {
-      width: 260px;
-      height: 260px;
-      left: 14%;
-    }
-
-    .music-control {
-      margin-left: 85%;
-      margin-top: -250%;
       width: 15%;
       height: 15%;
       cursor: pointer;
