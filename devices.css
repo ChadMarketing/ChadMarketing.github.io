@@ -1,12 +1,25 @@
 /* оч мелк телефоны */
 @media only screen and (max-width: 350px) {
   .slime-container {
-    display: none;
-  }
+    position: relative;
+    display: inline-block;
+    top: 84%;
+    width: 140%;
+    left: -18%;
+    z-index: 25;
+  } 
 
   .slime-container img {
-    display: none;
-  }
+    width: 300px;
+    height: auto;
+    border-radius: 80%;
+    transition: filter 0.4s ease-out;
+    filter: url(#displacementFilter);
+    width: 63%;
+    box-shadow: 0 0 110px rgb(0, 26, 255);
+  } 
+
+  
   .image_1 {
     width: 260px;
     height: 260px;
@@ -24,12 +37,25 @@
 /* маленькие телефоны */
 @media only screen and (max-width: 400px) {
   .slime-container {
-    display: none;
-  }
+    position: relative;
+    display: inline-block;
+    top: 84%;
+    width: 140%;
+    left: -18%;
+    z-index: 25;
+  } 
 
   .slime-container img {
-    display: none;
-  }
+    width: 300px;
+    height: auto;
+    border-radius: 80%;
+    transition: filter 0.4s ease-out;
+    filter: url(#displacementFilter);
+    width: 63%;
+    box-shadow: 0 0 110px rgb(0, 26, 255);
+  } 
+
+  
   .music-control {
     margin-left: 85%;
     margin-top: -250%;
@@ -276,12 +302,7 @@
     width: 63%;
     box-shadow: 0 0 110px rgb(0, 26, 255);
   } 
-  .slime-container {
-    display: none;
-  }
-  .slime-container img {
-    display: none;
-  }
+  
   .custom-cursor {
     display: none;
   }
@@ -289,12 +310,23 @@
   /* планшеты */
   @media only screen and (min-width: 768px) and (max-width: 1381px) {
     .slime-container {
-      display: none;
-    }
+    position: relative;
+    display: inline-block;
+    top: 84%;
+    width: 140%;
+    left: -18%;
+    z-index: 25;
+  } 
 
-    .slime-container img {
-      display: none;
-    }
+  .slime-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 80%;
+    transition: filter 0.4s ease-out;
+    filter: url(#displacementFilter);
+    width: 63%;
+    box-shadow: 0 0 110px rgb(0, 26, 255);
+  } 
     .marquee-content {
       width: max-content;
       animation: scroll 140s linear infinite;
