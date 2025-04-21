@@ -78,9 +78,9 @@
   .run_block {
     position: absolute;
     width: 90%;
-    height: 9%;
+    height: 12%;
     background: none;
-    top: 120%;
+    top: 123%;
     z-index: 9999;
     display: block;
     overflow: hidden;
