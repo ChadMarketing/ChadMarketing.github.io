@@ -82,7 +82,8 @@
     background: none;
     top: 123%;
     z-index: 9999;
-    display: block;
+    display: flex;
+    align-items: center;
     overflow: hidden;
     left: 4%; 
     border: 1px solid rgb(136, 14, 14);
