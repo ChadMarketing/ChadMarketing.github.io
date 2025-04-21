@@ -76,14 +76,14 @@
 @media only screen and (max-width: 767px) {
   .run_block {
     position: absolute;
-    width: 85%;
+    width: 90%;
     height: 10%;
     background: none;
     top: 120%;
     z-index: 9999;
     display: block;
     overflow: hidden;
-    left: 5%;
+    left: 4%;
   }
   .marquee-wrapper {
     display: none;
