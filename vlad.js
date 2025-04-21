@@ -169,10 +169,6 @@ const phrases = [
     text: "All-in-One Marketing – Built for Explosive Growth🔥",
     left: "30.2%",
   },
-  {
-    text: "Skyrocket Your Success with Complete Marketing Domination✨",
-    left: "25%",
-  },
 ];
 // Выбираем случайную фразу
 const randomIndex = Math.floor(Math.random() * phrases.length);
