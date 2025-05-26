@@ -169,6 +169,10 @@ const phrases = [
     text: "All-in-One Marketing – Built for Explosive Growth🔥",
     left: "30.2%",
   },
+  {
+    text: "Skyrocket Your Success with Complete Marketing Domination✨",
+    left: "25%",
+  },
 ];
 // Выбираем случайную фразу
 const randomIndex = Math.floor(Math.random() * phrases.length);
@@ -204,3 +208,78 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(text);
 });
+
+enterButton.addEventListener("click", function () {
+  // Анимация исчезновения
+  overlay.classList.add("hidden");
+
+  // Показываем основной контент с задержкой, после анимации
+  setTimeout(() => {
+    overlay.style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+
+    // Включаем музыку
+    music.muted = false;
+    music.play().catch((e) => {
+      console.log("Не удалось запустить музыку:", e);
+    });
+  }, 800); // Задержка в миллисекундах = длительность анимации
+});
+
+// переводчик
+const dictionary = {
+  en: {
+    "Click if you're not gay": "Нажми если не гей",
+    "Delivery in 2-3 hours 🔥 Price 10 sol":
+      "Доставка через 2-3 часа 🔥 Цена 10 солан",
+  },
+  ru: {
+    "Нажми если не гей": "Click if you're not gay",
+    "Доставка через 2-3 часа 🔥 Цена 10 солан":
+      "Delivery in 2-3 hours 🔥 Price 10 sol",
+  },
+};
+
+function translateText(text, from, to) {
+  const fromDict = dictionary[from];
+  return fromDict[text] || text; // если не нашли — вернем как есть
+}
+
+function switchLang(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    el.innerText = translateText(key, "en", lang); // переводим от английского к выбранному
+  });
+}
+
+let currentLang = "en";
+
+function switchLang(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+  elements.forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    el.innerText = translateText(key, currentLang, lang); // теперь переводим от currentLang к lang
+
+    // стили
+    if (el.id === "enterButton") {
+      if (lang === "ru") {
+        el.classList.add("ru-style_1");
+      } else {
+        el.classList.remove("ru-style_1");
+      }
+    }
+  });
+
+  // Активная кнопка
+  const buttons = document.querySelectorAll(".lang-btn");
+  buttons.forEach((btn) => {
+    if (btn.getAttribute("data-lang") === lang) {
+      btn.classList.add("active-lang");
+    } else {
+      btn.classList.remove("active-lang");
+    }
+  });
+
+  currentLang = lang;
+}
