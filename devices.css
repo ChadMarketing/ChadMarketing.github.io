@@ -1,26 +1,12 @@
 /* оч мелк телефоны */
 @media only screen and (max-width: 350px) {
   .slime-container {
-    position: relative;
-    display: inline-block;
-    top: 84%;
-    width: 140%;
-    left: -18%;
-    z-index: 25;
-    border: 1px solid rgb(136, 14, 14);
-  } 
+    display: none;
+  }
 
   .slime-container img {
-    width: 300px;
-    height: auto;
-    border-radius: 80%;
-    transition: filter 0.4s ease-out;
-    filter: url(#displacementFilter);
-    width: 63%;
-    box-shadow: 0 0 110px rgb(0, 26, 255);
-  } 
-
-  
+    display: none;
+  }
   .image_1 {
     width: 260px;
     height: 260px;
@@ -38,25 +24,12 @@
 /* маленькие телефоны */
 @media only screen and (max-width: 400px) {
   .slime-container {
-    position: relative;
-    display: inline-block;
-    top: 84%;
-    width: 140%;
-    left: -18%;
-    z-index: 25;
-  } 
+    display: none;
+  }
 
   .slime-container img {
-    width: 300px;
-    height: auto;
-    border-radius: 80%;
-    transition: filter 0.4s ease-out;
-    filter: url(#displacementFilter);
-    width: 63%;
-    box-shadow: 0 0 110px rgb(0, 26, 255);
-  } 
-
-  
+    display: none;
+  }
   .music-control {
     margin-left: 85%;
     margin-top: -250%;
@@ -75,40 +48,29 @@
 }
 /* телефоны */
 @media only screen and (max-width: 767px) {
-  .run_block {
-    position: absolute;
-    width: 90%;
-    height: 13%;
-    background: none;
-    top: 123%;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    left: 4%; 
-    border: 1px solid rgb(136, 14, 14);
-  }
+  /* текст */
+
   .marquee-wrapper {
-    display: none;
+    animation: scroll 3s linear infinite;
   }
 
-  .run_block div {
-    animation: scroll 175s linear infinite;
+  /* .run_block div {
+    animation: scroll 0.1s linear infinite;
     display: inline-block;
     white-space: nowrap;
-  }
-  .run_text img {
+  } */
+  /* .run_text img {
     width: 70px;
     height: 70px;
     border-radius: 60%;
-  }
-  .M_text {
+  }  */
+  /* .M_text {
     font-weight: 700;
     color: rgb(174, 0, 255);
     animation: blink 1s infinite;
     text-align: center;
-  }
-  @keyframes blink {
+  } */
+  /* @keyframes blink {
     0% {
       color: #ff8800;
     }
@@ -121,7 +83,7 @@
     100% {
       color: #ff8800;
     }
-  }
+  } */
   @keyframes scroll {
     from {
       transform: translateX(0%);
@@ -158,7 +120,7 @@
 
   .text_1 {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: -19%;
     font-size: 170%;
     font-weight: bold;
@@ -241,7 +203,7 @@
     top: 59%;
     left: -50%;
     width: 150%;
-    height: 325%;
+    height: 290%;
     background-color: black;
     position: absolute;
     transform: translateY(430px);
@@ -290,11 +252,11 @@
   .slime-container {
     position: relative;
     display: inline-block;
-    transform: translateY(1975px);
+    transform: translateY(1200px);
     width: 140%;
     left: -18%;
     z-index: 25;
-  } 
+  }
 
   .slime-container img {
     width: 300px;
@@ -304,32 +266,59 @@
     filter: url(#displacementFilter);
     width: 63%;
     box-shadow: 0 0 110px rgb(0, 26, 255);
-  } 
-  
+  }
   .custom-cursor {
     display: none;
   }
+  #enterButton {
+    padding: 20px 40px;
+    font-size: 360%;
+    font-family: Foldit;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 95%;
+    height: 20%;
+    animation: gl 1.5s infinite alternate;
+  }
 
+  #enterButton:hover {
+    transform: scale(1.05);
+  }
+
+  /* текст */
+  .text_lobby {
+    font-family: Foldit;
+    font-size: 600%;
+    text-align: center;
+  }
+  #overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(1694635471_new_preview_maxresdefault.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: scale(1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
   /* планшеты */
   @media only screen and (min-width: 768px) and (max-width: 1381px) {
     .slime-container {
-    position: relative;
-    display: inline-block;
-    top: 84%;
-    width: 140%;
-    left: -18%;
-    z-index: 25;
-  } 
+      display: none;
+    }
 
-  .slime-container img {
-    width: 300px;
-    height: auto;
-    border-radius: 80%;
-    transition: filter 0.4s ease-out;
-    filter: url(#displacementFilter);
-    width: 63%;
-    box-shadow: 0 0 110px rgb(0, 26, 255);
-  } 
+    .slime-container img {
+      display: none;
+    }
     .marquee-content {
       width: max-content;
       animation: scroll 140s linear infinite;
