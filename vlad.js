@@ -156,7 +156,7 @@ const phrases = [
   { text: "Maximize Your Reach – All Marketing, One Place🔥", left: "30.5%" },
   { text: "The Only Marketing Arsenal You’ll Ever Need✨", left: "31%" },
   { text: "Crush the Competition with Full-Stack Marketing💫", left: "29%" },
-  // { text: "One Hub, Infinite Marketing Possibilities⭐", left: "33%" },
+
   {
     text: "Supercharge Your Brand – All Marketing, Zero Limits🚀",
     left: "28%",
@@ -174,16 +174,16 @@ const phrases = [
     left: "25%",
   },
 ];
-// Выбираем случайную фразу
-const randomIndex = Math.floor(Math.random() * phrases.length);
-const randomPhrase = phrases[randomIndex];
+function showRandomPhrase() {
+  const textElement = document.getElementById("randomText");
 
-// Находим элемент с id "randomText"
-const textElement = document.getElementById("randomText");
+  const randomIndex = Math.floor(Math.random() * phrases.length);
+  const randomPhrase = phrases[randomIndex];
 
-// Вставляем текст и применяем стили
-textElement.textContent = randomPhrase.text; // <-- Устанавливаем только текст
-textElement.style.left = randomPhrase.left; // <-- Применяем стиль left
+  textElement.textContent = randomPhrase.text;
+  textElement.style.left = randomPhrase.left;
+}
+showRandomPhrase();
 
 // текст цена
 document.addEventListener("DOMContentLoaded", () => {
@@ -226,60 +226,3 @@ enterButton.addEventListener("click", function () {
   }, 800); // Задержка в миллисекундах = длительность анимации
 });
 
-// переводчик
-const dictionary = {
-  en: {
-    "Click if you're not gay": "Нажми если не гей",
-    "Delivery in 2-3 hours 🔥 Price 10 sol":
-      "Доставка через 2-3 часа 🔥 Цена 10 солан",
-  },
-  ru: {
-    "Нажми если не гей": "Click if you're not gay",
-    "Доставка через 2-3 часа 🔥 Цена 10 солан":
-      "Delivery in 2-3 hours 🔥 Price 10 sol",
-  },
-};
-
-function translateText(text, from, to) {
-  const fromDict = dictionary[from];
-  return fromDict[text] || text; // если не нашли — вернем как есть
-}
-
-function switchLang(lang) {
-  const elements = document.querySelectorAll("[data-i18n]");
-  elements.forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    el.innerText = translateText(key, "en", lang); // переводим от английского к выбранному
-  });
-}
-
-let currentLang = "en";
-
-function switchLang(lang) {
-  const elements = document.querySelectorAll("[data-i18n]");
-  elements.forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    el.innerText = translateText(key, currentLang, lang); // теперь переводим от currentLang к lang
-
-    // стили
-    if (el.id === "enterButton") {
-      if (lang === "ru") {
-        el.classList.add("ru-style_1");
-      } else {
-        el.classList.remove("ru-style_1");
-      }
-    }
-  });
-
-  // Активная кнопка
-  const buttons = document.querySelectorAll(".lang-btn");
-  buttons.forEach((btn) => {
-    if (btn.getAttribute("data-lang") === lang) {
-      btn.classList.add("active-lang");
-    } else {
-      btn.classList.remove("active-lang");
-    }
-  });
-
-  currentLang = lang;
-}
