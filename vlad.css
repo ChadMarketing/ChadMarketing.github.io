@@ -458,7 +458,6 @@ body {
   border-radius: 100%;
   cursor: pointer;
   transition: transform 0.2s;
-  margin-top: 20%;
   width: 55%;
   animation: gl 1.5s infinite alternate;
 }
@@ -485,56 +484,9 @@ body {
   transform: scale(1.05);
 }
 
-#mainContent {
-  display: none;
-  height: 100%;
-}
-
-#overlay.hidden + #mainContent {
-  display: block;
-}
-
 /* текст */
 .text_lobby {
   font-family: Foldit;
   font-size: 1400%;
-}
-/* переводчик */
-/* кнопки */
-.buttons-wrapper_lobby {
-  width: 150%;
-  transform: translateX(30%);
-  /* transform: translateY(15%); */
-}
-.lang-btn {
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 100%;
-  border: none;
-  border-radius: 12px;
-  background-color: #a3a3a3;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 15%;
-  height: 200%;
-  margin-right: 8%;
-  transform: translateY(45%);
-}
-
-.lang-btn:hover {
-  background-color: #e0e0e0;
-}
-
-.lang-btn.active-lang {
-  background-color: #838383;
-  color: white;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* стили к фразам */
-.ru-style_1 {
-  color: #cacaca;
-  font-size: 600%;
-  font-family: Rubik Bubbles;
+  transform: translateY(-70%);
 }
