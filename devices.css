@@ -54,8 +54,8 @@
   .run_block {
     position: absolute;
     bottom: 0;
-    width: 450px; /* любая ширина */
-    height: 140px;
+    width: 448px; /* любая ширина */
+    height: 160px;
     margin: 0 auto;
     overflow: hidden; /* скрывает выходящий текст */
     background: #1b1a1b;
@@ -63,7 +63,7 @@
     align-items: center;
     justify-content: flex-start;
     left: -4%;
-    top: 105%;
+    top: 110%;
   }
   .run_text {
     white-space: nowrap;
