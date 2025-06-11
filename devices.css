@@ -63,7 +63,7 @@
     align-items: center;
     justify-content: flex-start;
     left: -4%;
-    top: 118%;
+    top: 117%;
   }
   .run_text {
     white-space: nowrap;
@@ -262,7 +262,7 @@
     filter: url(#displacementFilter);
     width: 63%;
     box-shadow: 0 0 110px rgb(0, 26, 255);
-    top: 50%;
+    top: 90%;
   }
   .custom-cursor {
     display: none;
