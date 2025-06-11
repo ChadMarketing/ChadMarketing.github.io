@@ -118,7 +118,7 @@
 
   .text_1 {
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: -19%;
     font-size: 170%;
     font-weight: bold;
@@ -257,13 +257,12 @@
   }
 
   .slime-container img {
-    width: 300px;
-    height: auto;
     border-radius: 80%;
     transition: filter 0.4s ease-out;
     filter: url(#displacementFilter);
     width: 63%;
     box-shadow: 0 0 110px rgb(0, 26, 255);
+    top: 50;
   }
   .custom-cursor {
     display: none;
