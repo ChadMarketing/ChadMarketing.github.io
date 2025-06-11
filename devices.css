@@ -120,7 +120,7 @@
     position: absolute;
     top: 98%;
     left: -19%;
-    font-size: 170%;
+    font-size: 125%;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -254,6 +254,7 @@
     width: 140%;
     left: -18%;
     z-index: 25;
+    top: 50%;
   }
 
   .slime-container img {
@@ -262,7 +263,6 @@
     filter: url(#displacementFilter);
     width: 63%;
     box-shadow: 0 0 110px rgb(0, 26, 255);
-    top: 90%;
   }
   .custom-cursor {
     display: none;
