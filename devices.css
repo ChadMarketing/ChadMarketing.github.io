@@ -120,7 +120,7 @@
     position: absolute;
     top: 98%;
     left: -19%;
-    font-size: 150%;
+    font-size: 160%;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -250,7 +250,7 @@
   .slime-container {
     position: relative;
     display: inline-block;
-    transform: translateY(1700px);
+    transform: translateY(1900px);
     width: 140%;
     left: -18%;
     z-index: 25;
