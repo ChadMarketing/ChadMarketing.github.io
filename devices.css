@@ -64,7 +64,7 @@
   .run_block {
     position: absolute;
     bottom: 0;
-    width: 448px; /* любая ширина */
+    width: 451px; /* любая ширина */
     height: 165px;
     margin: 0 auto;
     overflow: hidden; /* скрывает выходящий текст */
