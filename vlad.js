@@ -169,10 +169,6 @@ const phrases = [
     text: "All-in-One Marketing – Built for Explosive Growth🔥",
     left: "30.2%",
   },
-  {
-    text: "Skyrocket Your Success with Complete Marketing Domination✨",
-    left: "25%",
-  },
 ];
 function showRandomPhrase() {
   const textElement = document.getElementById("randomText");
