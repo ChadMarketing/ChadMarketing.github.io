@@ -49,7 +49,7 @@
 /* телефоны */
 @media only screen and (max-width: 767px) {
   .video-background {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
