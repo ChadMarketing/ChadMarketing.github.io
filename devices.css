@@ -65,7 +65,7 @@
     position: absolute;
     bottom: 0;
     width: 448px; /* любая ширина */
-    height: 160px;
+    height: 170px;
     margin: 0 auto;
     overflow: hidden; /* скрывает выходящий текст */
     background: #1b1a1b;
