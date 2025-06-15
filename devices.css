@@ -73,7 +73,7 @@
     align-items: center;
     justify-content: flex-start;
     left: -4%;
-    top: 112.5%;
+    top: 110%;
   }
   .run_text {
     white-space: nowrap;
@@ -128,7 +128,7 @@
 
   .text_1 {
     position: absolute;
-    top: 98%;
+    top: 95%;
     left: -19%;
     font-size: 160%;
     font-weight: bold;
