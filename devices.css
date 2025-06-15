@@ -280,6 +280,7 @@
     font-family: Foldit;
     font-size: 575%;
     text-align: center;
+    transfom: translateY(20%)
   }
   #overlay {
     position: fixed;
