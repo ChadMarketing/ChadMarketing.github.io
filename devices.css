@@ -269,6 +269,7 @@
   #enterButton {
     color: #8a2136;
     font-size: 300%;
+    with: 70%
   }
 
   #enterButton:hover {
