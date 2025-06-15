@@ -267,16 +267,8 @@
     display: none;
   }
   #enterButton {
-    padding: 20px 40px;
-    font-size: 360%;
-    font-family: Foldit;
-    border: none;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: transform 0.2s;
-    width: 95%;
-    height: 20%;
-    animation: gl 1.5s infinite alternate;
+    color: #8a2136;
+    font-size: 300%;
   }
 
   #enterButton:hover {
