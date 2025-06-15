@@ -65,7 +65,7 @@
     position: absolute;
     bottom: 0;
     width: 448px; /* любая ширина */
-    height: 170px;
+    height: 165px;
     margin: 0 auto;
     overflow: hidden; /* скрывает выходящий текст */
     background: #1b1a1b;
@@ -73,7 +73,7 @@
     align-items: center;
     justify-content: flex-start;
     left: -4%;
-    top: 117%;
+    top: 112.5%;
   }
   .run_text {
     white-space: nowrap;
