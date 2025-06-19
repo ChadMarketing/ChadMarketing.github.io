@@ -323,6 +323,15 @@
     transform: translateY(430px);
     z-index: -1;
   }
+  .text-wrapper {
+    margin-left: -65%;
+    margin-top: -8%;
+    width: 96%;
+    line-height: 1.5;
+    font-size: 190%;
+    color: #13a5d1;
+    font-family: Permanent Marker;
+  }
 }
 @media only screen and (max-width: 1850px) {
   .black-bar1 {
@@ -334,5 +343,24 @@
     position: absolute;
     transform: translateY(430px);
     z-index: -1;
+  }
+  .text-wrapper {
+    margin-left: -55%;
+    margin-top: -8%;
+    width: 96%;
+    line-height: 1.5;
+    font-size: 200%;
+    color: #13a5d1;
+    font-family: Permanent Marker;
+  }
+  .text_2 {
+    margin-left: -56%;
+    margin-top: 102%;
+    width: 96%;
+    line-height: 1.5;
+    font-size: 245%;
+    color: #c300ff;
+    font-family: Permanent Marker;
+    opacity: 0;
   }
 }
