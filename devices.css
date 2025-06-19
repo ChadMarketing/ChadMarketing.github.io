@@ -310,163 +310,17 @@
     background-size: cover;
     background-position: center center;
   }
-  /* планшеты */
-  @media only screen and (min-width: 768px) and (max-width: 1381px) {
-    .slime-container {
-      display: none;
-    }
 
-    .slime-container img {
-      display: none;
-    }
-    .marquee-content {
-      width: max-content;
-      animation: scroll 140s linear infinite;
-    }
-    .music-control {
-      margin-left: 115%;
-      margin-top: -240%;
-      width: 15%;
-      height: 15%;
-      cursor: pointer;
-    }
-    .black-bar1 {
-      top: 59%;
-      left: -50%;
-      width: 150%;
-      height: 129.6%;
-      background-color: black;
-      position: absolute;
-      transform: translateY(430px);
-      z-index: -1;
-    }
-    .image_1 {
-      width: 325px;
-      height: 325px;
-      left: 29%;
-    }
-    .text_1 {
-      position: absolute;
-      top: 75%;
-      left: 11.5%;
-      font-size: 125%;
-      font-weight: bold;
-      color: #fff;
-      text-align: center;
-      text-transform: uppercase;
-      animation: glowice12 1.5s infinite alternate;
-      margin: 0 auto; /* Центрирует колонку на странице */
-      line-height: 1.5; /* Устанавливает интерлиньяж для удобства чтения */
-      max-width: 80%;
-    }
-    @keyframes glowice12 {
-      0% {
-        text-shadow: 0 0 5px #a6cfff, 0 0 10px #80d4ff, 0 0 15px #3a88e8;
-      }
-      50% {
-        text-shadow: 0 0 10px #5fa7e9, 0 0 20px #7ac7ff, 0 0 30px #379de6;
-      }
-      100% {
-        text-shadow: 0 0 20px #4a8bd2, 0 0 40px #2894e6, 0 0 50px #186cb2;
-      }
-    }
-    .gif-button_1 {
-      margin-left: 10%;
-      margin-top: 98%;
-      width: 25%;
-      height: 22%;
-      border: none;
-      border-radius: 15%;
-      background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
-      background-size: cover; /* Масштабируем GIF по размеру кнопки */
-      font-size: 75%;
-      font-weight: bold;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      font-family: Nosifer;
-      color: rgb(0, 26, 255);
-    }
-
-    .gif-button_1:hover {
-      transform: scale(1.05); /* Увеличиваем кнопку при наведении */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
-    }
-
-    .gif-button_1:active {
-      transform: scale(0.95); /* Эффект уменьшения при нажатии */
-    }
-
-    .gif-button_2 {
-      margin-left: 66%;
-      margin-top: -21.9%;
-      width: 25%;
-      height: 22%;
-      border: none;
-      border-radius: 15%;
-      background: url("giga-chad.gif") no-repeat center center; /* Фон кнопки - GIF */
-      background-size: cover; /* Масштабируем GIF по размеру кнопки */
-      font-size: 125%;
-      font-weight: bold;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем тень к тексту */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      font-family: Nosifer;
-      color: rgb(255, 0, 0);
-    }
-
-    .gif-button_2:hover {
-      transform: scale(1.05); /* Увеличиваем кнопку при наведении */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
-    }
-
-    .gif-button_2:active {
-      transform: scale(0.95); /* Эффект уменьшения при нажатии */
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slime-container {
-      display: none;
-    }
-
-    .slime-container img {
-      display: none;
-    }
-    .black-bar1 {
-      top: 70%;
-      left: -50%;
-      width: 150%;
-      height: 129.6%;
-      background-color: black;
-      position: absolute;
-      transform: translateY(430px);
-      z-index: -1;
-    }
-  }
-  @media only screen and (min-width: 992px) and (max-width: 1381px) {
-    .slime-container {
-      display: none;
-    }
-
-    .slime-container img {
-      display: none;
-    }
-    .image_1 {
-      width: 325px;
-      height: 325px;
-      left: 34%;
-    }
-    .music-control {
-      margin-left: 120%;
-      margin-top: -230%;
-      width: 15%;
-      height: 15%;
-      cursor: pointer;
-    }
+/* ноуты */
+@media only screen and (max-width: 1920px) {
+  .black-bar1 {
+    top: 59%;
+    left: -50%;
+    width: 150%;
+    height: 135%;
+    background-color: black;
+    position: absolute;
+    transform: translateY(430px);
+    z-index: -1;
   }
 }
