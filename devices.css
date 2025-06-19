@@ -324,3 +324,15 @@
     z-index: -1;
   }
 }
+@media only screen and (max-width: 1850px) {
+  .black-bar1 {
+    top: 59%;
+    left: -50%;
+    width: 150%;
+    height: 200%;
+    background-color: black;
+    position: absolute;
+    transform: translateY(430px);
+    z-index: -1;
+  }
+}
