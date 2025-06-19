@@ -133,7 +133,7 @@ body {
 
 /* музыка */
 .music-control {
-  position: fixed;
+  position: absolute;
   margin-left: 63%;
   margin-top: -34%;
   width: 6%;
@@ -489,18 +489,4 @@ body {
   font-family: Foldit;
   font-size: 1400%;
   transform: translateY(-70%);
-}
-
-/* ноуты */
-@media only screen and (max-width: 1920px) {
-  .black-bar1 {
-    top: 59%;
-    left: -50%;
-    width: 150%;
-    height: 135%;
-    background-color: black;
-    position: absolute;
-    transform: translateY(430px);
-    z-index: -1;
-  }
 }
