@@ -324,13 +324,14 @@
     z-index: -1;
   }
   .text-wrapper {
-    margin-left: -65%;
+/*     margin-left: -65%;
     margin-top: -8%;
     width: 96%;
     line-height: 1.5;
     font-size: 50%;
     color: #13a5d1;
-    font-family: Permanent Marker;
+    font-family: Permanent Marker; */
+    display: none;
   }
 }
 @media only screen and (max-width: 1850px) {
