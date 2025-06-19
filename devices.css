@@ -334,7 +334,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 1850px) {
+/* @media only screen and (max-width: 1850px) {
   .black-bar1 {
     top: 59%;
     left: -50%;
@@ -364,4 +364,4 @@
     font-family: Permanent Marker;
     opacity: 0;
   }
-}
+} */
